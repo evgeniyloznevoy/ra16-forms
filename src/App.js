@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import ConverterColor from './components/ConverterColor';
+import StepsBook from './components/StepsBook';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='container'>
+      <div className='title'>Конвертер цветов</div>
+      <ConverterColor color={'#9921ff'} />
+      </div>
+    <div className='container'>      
+    <div className='title'>Учёт тренировок</div>
+      <StepsBook trainings={[]}/>
     </div>
+    </>
   );
 }
 
